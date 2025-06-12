@@ -1,0 +1,12 @@
+{
+  "name": "launcher",
+  "version": "1.0.0",
+  "scripts": {
+    "backend": "uvicorn backend.main:app --reload --port 8000",
+    "frontend": "cd frontend && npm start",
+    "start": "concurrently \"npm run backend\" \"npm run frontend\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.1"
+  }
+}
